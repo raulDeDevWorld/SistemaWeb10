@@ -74,6 +74,7 @@ const styles = StyleSheet.create({
         display: "flex",
         flexDirection: "row"
     },
+    
     key: {
         margin: "0px",
         width: "50%",
@@ -87,6 +88,15 @@ const styles = StyleSheet.create({
     },
     value: {
         width: "50%",
+        height: "12px",
+        padding: "2px 5px 0px 5px ",
+        border: "0.5px solid #294B98",
+        color: "#000000",
+        fontSize: "8px",
+        fontWeight: "100"
+    },
+    valueFour: {
+        width: "25%",
         height: "12px",
         padding: "2px 5px 0px 5px ",
         border: "0.5px solid #294B98",
@@ -260,64 +270,50 @@ const PDFView = ({ click }) => {
                         <Text style={styles.subtitle}>DATOS DEL TRANSPORTISTA</Text>
                         <View style={styles.items}>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
+                                <Text style={styles.valueFour}>NOMBRE</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["NOMBRE"] && pdfData["NOMBRE"]}</Text>
+                                <Text style={styles.valueFour}>LICENCIA</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["LICENCIA"] && pdfData["LICENCIA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
+                                <Text style={styles.valueFour}>CELULAR</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["CELULAR"] && pdfData["CELULAR"]}</Text>
+                                <Text style={styles.valueFour}>PLACA</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["PLACA"] && pdfData["PLACA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
+                                <Text style={styles.valueFour}>TIPO DE UNIDAD</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["TIPO DE UNIDAD"] && pdfData["TIPO DE UNIDAD"]}</Text>
+                                <Text style={styles.valueFour}>COLOR</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["COLOR"] && pdfData["COLOR"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
+                                <Text style={styles.valueFour}>MARCA</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MARCA"] && pdfData["MARCA"]}</Text>
+                                <Text style={styles.valueFour}>TRANSITO</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["TRANSITO"] && pdfData["TRANSITO"]}</Text>
                             </View>
                         </View>
 
                         <Text style={styles.subtitle}>INFORMACION DEL SERVICIO</Text>
                         <View style={styles.items}>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
+                                <Text style={styles.valueFour}>MERCANCIA</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MERCANCIA"] && pdfData["MERCANCIA"]}</Text>
+                                <Text style={styles.valueFour}>TIPO DE CARGA</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["TIPO DE CARGA"] && pdfData["TIPO DE CARGA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
+                                <Text style={styles.valueFour}>EMPAQUE</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["EMPAQUE"] && pdfData["EMPAQUE"]}</Text>
+                                <Text style={styles.valueFour}>SERVICIO</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["SERVICIO"] && pdfData["SERVICIO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
+                                <Text style={styles.valueFour}>ORIGEN</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["ORIGEN"] && pdfData["ORIGEN"]}</Text>
+                                <Text style={styles.valueFour}>DESTINO</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["DESTINO"] && pdfData["DESTINO"]}</Text>
                             </View>
                         </View>
 
