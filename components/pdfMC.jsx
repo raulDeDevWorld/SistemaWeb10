@@ -18,8 +18,8 @@ const styles = StyleSheet.create({
     },
 title: {
    
-        fontSize: '25px', 
-        fontWeight: '200',
+        fontSize: '20px', 
+        fontWeight: '300',
 
     },
     subtitle: {
