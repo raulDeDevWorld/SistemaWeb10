@@ -162,7 +162,7 @@ const styles = StyleSheet.create({
         width: "34%",
         height: "12px",
         padding: "2px 5px 0px 5px ",
-        borderTop: "1px solid #294B98",
+        borderbottom: "1px solid #294B98",
         color: "#000000",
         fontSize: "8px",
         fontWeight: "100",
@@ -422,19 +422,19 @@ const PDFView = ({ click }) => {
 
                         <View style={styles.viewKeyValueTwoYellow} >
 <Text style={styles.valueElaborador}>FIRMA Y SELLO:</Text>
-                            <Text style={styles.valueElaborador}></Text>
+                            <Text style={styles.valueElaboradoLiner}></Text>
                             <Text style={styles.valueElaborador}>FIRMA Y SELLO:</Text>
-                            <Text style={styles.valueElaborador}></Text>
+                            <Text style={styles.valueElaboradorLine}></Text>
                         </View>
                         <View style={styles.viewKeyValueTwo}>
 <Text style={styles.valueElaborador}>NOMBRE:</Text>
-                            <Text style={styles.valueElaborador}></Text>
+                            <Text style={styles.valueElaboradorLine}></Text>
                             <Text style={styles.valueElaborador}>NOMBRE:</Text>
                             <Text style={styles.valueElaboradorLine}></Text>
                         </View>
                         <View style={styles.viewKeyValueTwo} >
 <Text style={styles.valueElaborador}>FECHA:</Text>
-                            <Text style={styles.valueElaborador}></Text>
+                            <Text style={styles.valueElaboradorLine}></Text>
                             <Text style={styles.valueElaborador}>FECHA:</Text>
                             <Text style={styles.valueElaboradorLine}></Text>
                         </View>
