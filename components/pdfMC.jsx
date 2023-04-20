@@ -321,34 +321,25 @@ const PDFView = ({ click }) => {
                         <View style={styles.items}>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>DOCUMENTACION SOPORTE</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>INSTRUCCIONES DEL TRANSPORTE</Text>
-
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>DOCUMENTO</Text>
                                 <Text style={styles.key}>NUMERO</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION1"] && pdfData["INSTRUCCION1"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION2"] && pdfData["INSTRUCCION2"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>TELEFONO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["telefono"] && pdfData["telefono"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["DOC1"] && pdfData["DOC1"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NUM1"] && pdfData["NUM1"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION3"] && pdfData["INSTRUCCION3"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION4"] && pdfData["INSTRUCCION4"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CIUDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["ciudad"] && pdfData["ciudad"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
-                            </View>
-                            <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>CARGO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["cargo"] && pdfData["cargo"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["DOC1"] && pdfData["DOC2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NUM1"] && pdfData["NUM2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION3"] && pdfData["INSTRUCCION5"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION4"] && pdfData["INSTRUCCION6"]}</Text>
                             </View>
 
                         </View>
@@ -401,7 +392,7 @@ const PDFView = ({ click }) => {
                 <div style={{ display: 'flex', justifyContent: 'center' }}>
                     <Button style={'buttonSecondary'} click={click}>pdf</Button>
                 </div>
-            </PDFDownloadLink>}
+            </PDFDownloadLink>} 
         </div>
     )
 }
