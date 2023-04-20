@@ -95,6 +95,18 @@ const styles = StyleSheet.create({
         fontSize: "8px",
         fontWeight: "100"
     },
+
+  valueTarifa: {
+        width: "50%",
+        height: "12px",
+        padding: "2px 5px 0px 5px ",
+        border: "0.5px solid #294B98",
+        color: "#000000",
+        fontSize: "8px",
+        fontWeight: "100"
+    },
+
+
     valueFour: {
         width: "25%",
         height: "12px",
