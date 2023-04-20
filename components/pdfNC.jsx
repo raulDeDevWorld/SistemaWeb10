@@ -132,10 +132,6 @@ const PDFView = () => {
                                     <Text style={styles.key}>FECHA</Text>
                                     <Text style={styles.value}>{pdfData && pdfData["FECHA"] && pdfData["FECHA"]}</Text>
                                 </View>
-                                <View style={styles.introViewKeyValue}>
-                                    <Text style={styles.key}>VALIDEZ</Text>
-                                    <Text style={styles.value}>{pdfData && pdfData["VALIDEZ"] && pdfData["VALIDEZ"]}</Text>
-                                </View>
                             </View>
                         </View>
 
@@ -170,37 +166,45 @@ const PDFView = () => {
 
                         <Text style={styles.subtitle}>DESCRIPCION DE LA CARGA</Text>
                         <View style={styles.items}>
-                            <View style={styles.viewKeyValue}>
+<View style={styles.viewKeyValue}>
+                                <Text style={styles.key}>NÚMERO DE SERVICIO</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-NUMERO DE SERVICIO"] && pdfData["NC-NUMERO DE SERVICIO"]}</Text>
+                            </View>
+<View style={styles.viewKeyValue}>
+                                <Text style={styles.key}>MONEDA</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-MONEDA"] && pdfData["NC-MONEDA"]}</Text>
+                            </View>
+<View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>MERCANCIA</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-MERCANCIA"] && pdfData["CT-MERCANCIA"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-MERCANCIA"] && pdfData["NC-MERCANCIA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>*TIPO DE CARGA</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-TIPO DE CARGA"] && pdfData["CT-TIPO DE CARGA"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-TIPO DE CARGA"] && pdfData["NC-TIPO DE CARGA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>EMPAQUE</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-EMPAQUE"] && pdfData["CT-EMPAQUE"]}</Text>
+                                <Text style={styles.key}>MERCANCIA</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-MERCANCIA"] && pdfData["NC-MERCANCIA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>*VOLUMEN M3</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-VOLUMEN M3"] && pdfData["CT-VOLUMEN M3"]}</Text>
+                                <Text style={styles.key}>*TIPO DE CAMBIO</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-TIPO DE CAMBIO"] && pdfData["NC-TIPO DE CAMBIO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>*PESO TN</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-PESO TN"] && pdfData["CT-PESO TN"]}</Text>
+                                <Text style={styles.key}>TIPO DE CARGA</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-TIPO DE CARGA"] && pdfData["NC-TIPO DE CARGA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>*CANTIDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-CANTIDAD"] && pdfData["CT-CANTIDAD"]}</Text>
+                                <Text style={styles.key}>*CONDICIONES DE PAGO</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-CONDICIONES DE PAGO"] && pdfData["NC-CONDICIONES DE PAGO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>INCOTERM</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-INCOTERM"] && pdfData["CT-INCOTERM"]}</Text>
+                                <Text style={styles.key}>TIPO DE SERVICIO</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-TIPO DE SERVICIO"] && pdfData["NC-TIPO DE SERVICIO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>MODALIDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-MODALIDAD"] && pdfData["CT-MODALIDAD"]}</Text>
+                                <Text style={styles.key}>CONTRATO/COTIZACIÓN</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-CONTRATO"] && pdfData["NC-CONTRATO"]}</Text>
                             </View>
                         </View>
 
