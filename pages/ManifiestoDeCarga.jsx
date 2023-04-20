@@ -361,6 +361,15 @@ function CotizacionTerrestre() {
                     <div className={style.inputsAll} >
                         <textarea type="text" name={"COMENTARIO"} />
                     </div>
+
+<br />
+
+
+<div className={`${style.containerFirstItems}`}>
+
+                        <span>Elaborado por</span>
+                        <input type="text" name={`ELABORADOR`} onChange={handleEventChange} placeholder="ELABORADO POR" />
+                    </div>
                 </form>
             </div>
             <InvoicePDF click={handlerPDFTester} />
