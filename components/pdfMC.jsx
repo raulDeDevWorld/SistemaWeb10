@@ -346,6 +346,62 @@ const PDFView = ({ click }) => {
 
 
 
+<Text style={styles.subtitle}>DESCRIPCION DE LA CARGA</Text>
+                         <View style={styles.viewKeyValueTwo}>
+                                <Text style={styles.valueTarifa}>No</Text>
+                                <Text style={styles.valueTarifa}>ITEM</Text>
+                                <Text style={styles.valueTarifa}>DESCRIPCION</Text>
+                                <Text style={styles.valueTarifa}>MARCA</Text>
+                                <Text style={styles.valueTarifa}>CANTIDAD</Text>
+                                <Text style={styles.valueTarifa}>PESO</Text>
+                                <Text style={styles.valueTarifa}>VOLUMEN</Text>
+                                <Text style={styles.valueTarifa}>DIRECCION DE ENTREGA</Text>
+                          
+                            </View>
+
+
+{
+                        pdfData.tarifa.map((i, index) => {
+                            return (
+
+                            <View style={styles.viewKeyValueTwo}>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-N${index}`] && pdfData[`MC-N${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-ITEM${index}`] && pdfData[`MC-ITEM${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-DESCRIPCION${index}`] && pdfData[`MC-DESCRIPCION${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-MARCA${index}`] && pdfData[`MC-MARCA${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-CANTIDAD${index}`] && pdfData[`MC-CANTIDAD${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-PESO${index}`] && pdfData[`MC-PESO${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-VOLUMEN${index}`] && pdfData[`MC-VOLUMEN${index}`]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData[`MC-DIRECCION DE ENTREGA${index}`] && pdfData[`MC-DIRECCION DE ENTREGA${index}`]}</Text>
+                          
+                            </View>
+
+                            
+                            )
+                        })
+                    }
+
+
+{
+                        tarifa.map((i, index) => {
+                            return (
+                                <div className={`${style.inputs}`} key={index}>
+                                    <input type="text" name={`N${index}`}  placeholder="Nº" />
+                                    <input type="text" name={`ITEM${index}`}  placeholder="ITEM" />
+                                    <input type="text" name={`DESCRIPCION${index}`}  placeholder="DESCRIPCION" />
+                                    <input type="text" name={`MARCA${index}`}  placeholder="MARCA Y/O PRESINTO" />
+                                    <input type="number" name={`CANTIDAD${index}`} onChange={(e) => handlerCalc(e, index)} placeholder="CANTIDAD" />
+                                    <input type="number" name={`PESO${index}`} onChange={(e) => handlerCalc(e, index)} placeholder="PESO (Kg)" />
+                                    <input type="number" name={`VOLUMEN${index}`} onChange={(e) => handlerCalc(e, index)} placeholder="VOLUMEN (M3)" />
+                                    <input type="text" name={`DIRECCION DE ENTREGA${index}`}  placeholder="DIRECCION DE ENTREGA" />
+                                </div>
+                            )
+                        })
+                    }
+
+
+
+
                         <Text style={styles.subtitle}>OBSERVACIONES EN ORIGEN</Text>
 
                         <View style={styles.viewKeyValueTwo} >
