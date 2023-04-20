@@ -422,7 +422,7 @@ const PDFView = ({ click }) => {
 
                         <View style={styles.viewKeyValueTwoYellow} >
 <Text style={styles.valueElaborador}>FIRMA Y SELLO:</Text>
-                            <Text style={styles.valueElaboradoLiner}></Text>
+                            <Text style={styles.valueElaboradorLine}></Text>
                             <Text style={styles.valueElaborador}>FIRMA Y SELLO:</Text>
                             <Text style={styles.valueElaboradorLine}></Text>
                         </View>
