@@ -211,106 +211,43 @@ const PDFView = () => {
                         <Text style={styles.subtitle}>DETALLES DEL SERVICIO</Text>
                         <View style={styles.items}>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.key}>*SERVICIO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-SERVICIO"] && pdfData["CT-SERVICIO"]}</Text>
+                                <Text style={styles.key}>BANCO</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-BANCO"] && pdfData["CT-BANCO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>*TIPO DE UNIDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-TIPO DE UNIDAD"] && pdfData["CT-TIPO DE UNIDAD"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-TIPO DE UNIDAD"] && pdfData["CT-TIPO DE UNIDAD"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>*ORIGEN</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-ORIGEN"] && pdfData["CT-ORIGEN"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-ORIGEN"] && pdfData["CT-ORIGEN"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>*DESTINO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-DESTINO"] && pdfData["CT-DESTINO"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-DESTINO"] && pdfData["CT-DESTINO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>*CANTIDAD</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-CANTIDAD"] && pdfData["CT-CANTIDAD"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-CANTIDAD"] && pdfData["CT-CANTIDAD"]}</Text>
                             </View>
 
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>*MONEDA</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["CT-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["NC-MONEDA"] && pdfData["CT-MONEDA"]}</Text>
                             </View>
                         </View>
 
-                        <Text style={styles.subtitle}>TARIFA</Text>
-                        <View style={styles.viewKeyValueTwo}>
-                            <Text style={styles.key}>DETALLE</Text>
-                            <Text style={styles.key}>FLETE UNITARIO</Text>
-                            <Text style={styles.key}>CANTIDAD</Text>
-                            <Text style={styles.key}>FLETE TOTAL</Text>
-                        </View>
+                        
 
 
 
 
-                        {
-                            pdfData.tarifa && pdfData.tarifa.map((i, index) => {
-                                return (
 
-                                    <View style={styles.viewKeyValueTwo} key={index}>
-                                        <Text style={styles.value}>{pdfData && pdfData[`DETALLEFLETE${index}`] && pdfData[`DETALLEFLETE${index}`]}</Text>
-                                        <Text style={styles.value}>{pdfData && pdfData[`FLETEUNITARIO${index}`] && pdfData[`FLETEUNITARIO${index}`]}</Text>
-                                        <Text style={styles.value}>{pdfData && pdfData[`CANTIDADFLETE${index}`] && pdfData[`CANTIDADFLETE${index}`]}</Text>
-                                        <Text style={styles.value}>{pdfData && pdfData[`PRODUCTFLETE${index}`] && pdfData[`PRODUCTFLETE${index}`]}</Text>
-                                    </View>
-
-
-                                )
-                            })
-                        }
-
-
-                        <Text style={styles.subtitle}>OTROS GASTOS</Text>
-                        <View style={styles.viewKeyValueTwo}>
-                            <Text style={styles.key}>DETALLE</Text>
-                            <Text style={styles.key}>COSTO UNITARIO</Text>
-                            <Text style={styles.key}>CANTIDAD</Text>
-                            <Text style={styles.key}>COSTO TOTAL</Text>
-                        </View>
-
-
-
-                        {
-                            pdfData.otrosGastos && pdfData.otrosGastos.map((i, index) => {
-                                return (
-
-                                    <View style={styles.viewKeyValueTwo} key={index}>
-
-
-                                        <Text style={styles.value}>{pdfData && pdfData[`DETALLE${index}`] && pdfData[`DETALLE${index}`]}</Text>
-                                        <Text style={styles.value}>{pdfData && pdfData[`FLETEUNITARIO${index}`] && pdfData[`FLETEUNITARIO${index}`]}</Text>
-                                        <Text style={styles.value}>{pdfData && pdfData[`CANTIDADFLETE${index}`] && pdfData[`CANTIDADFLETE${index}`]}</Text>
-                                        <Text style={styles.value}>{pdfData && pdfData[`PRODUCTFLETE${index}`] && pdfData[`PRODUCTFLETE${index}`]}</Text>
+                        
 
 
 
 
-                                    </View>
-
-
-                                )
-                            })
-                        }
-
-
-
-
-                        <Text style={styles.subtitle}>EXCLUYE</Text>
-                        {
-                            pdfData.excluye && pdfData.excluye.map((i, index) => {
-                                return (
-
-                                    <View key={index}>
-                                        <Text></Text>
-                                    </View>
-                                )
-                            })
-                        }
 
                     </Page>
                 </Document>}
