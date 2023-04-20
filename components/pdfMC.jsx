@@ -1,6 +1,7 @@
 import { PDFDownloadLink, Document, Page, View, Text, Image, PDFViewer, StyleSheet, Font } from "@react-pdf/renderer";
 import { useUser } from "../context/Context.js"
 import { useState, useRef, useEffect } from 'react'
+import { getDayMonthYear } from "../utils/Fecha";
 import Button from './Button'
 Font.register({ family: "Inter", src: "/assets/font.otf" })
 
@@ -162,7 +163,7 @@ const styles = StyleSheet.create({
         width: "34%",
         height: "12px",
         padding: "2px 5px 0px 5px ",
-        borderbottom: "1px solid #294B98",
+        borderBottom: "1px solid #294B98",
         color: "#000000",
         fontSize: "8px",
         fontWeight: "100",
@@ -434,9 +435,9 @@ const PDFView = ({ click }) => {
                         </View>
                         <View style={styles.viewKeyValueTwo} >
 <Text style={styles.valueElaborador}>FECHA:</Text>
-                            <Text style={styles.valueElaboradorLine}></Text>
+                            <Text style={styles.valueElaboradorLine}>{getDayMonthYear()}</Text>
                             <Text style={styles.valueElaborador}>FECHA:</Text>
-                            <Text style={styles.valueElaboradorLine}></Text>
+                            <Text style={styles.valueElaboradorLine}>{getDayMonthYear()}</Text>
                         </View>
 
 
@@ -447,19 +448,19 @@ const PDFView = ({ click }) => {
 <View style={styles.viewKeyValueTwoYellow} >
                             <Text style={styles.valueElaborador}></Text>
                             <Text style={styles.valueElaborador}>FIRMA Y SELLO:</Text>
-                            <Text style={styles.valueElaboradorLine}></Text>
+                            <Text style={styles.valueElaboradorLine}>{getDayMonthYear()}</Text>
 <Text style={styles.valueElaborador}></Text>
                         </View>
                         <View style={styles.viewKeyValueTwo}>
                             <Text style={styles.valueElaborador}></Text>
                             <Text style={styles.valueElaborador}>NOMBRE:</Text>
-                            <Text style={styles.valueElaboradorLine}></Text>
+                            <Text style={styles.valueElaboradorLine}>{getDayMonthYear()}</Text>
 <Text style={styles.valueElaborador}></Text>
                         </View>
                         <View style={styles.viewKeyValueTwo} >
                             <Text style={styles.valueElaborador}></Text>
                             <Text style={styles.valueElaborador}>FECHA:</Text>
-                            <Text style={styles.valueElaboradorLine}></Text>
+                            <Text style={styles.valueElaboradorLine}>{getDayMonthYear()}</Text>
 <Text style={styles.valueElaborador}></Text>
                         </View>
 
