@@ -373,7 +373,7 @@ const PDFView = ({ click }) => {
 
 
 {
-                     pdfData.tarifa && pdfData.tarifa.map((i, index) => {
+                     pdfData && pdfData.tarifa && pdfData.tarifa.map((i, index) => {
                             return (
 
                             <View style={styles.viewKeyValueTwo} key={index}>
