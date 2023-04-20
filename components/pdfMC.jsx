@@ -16,6 +16,11 @@ const styles = StyleSheet.create({
         fontSize: "8px",
         fontWeight: "100",
     },
+title: {
+   
+        font-size: 30px;
+
+    },
     subtitle: {
         width: "100%",
         position: "relative",
