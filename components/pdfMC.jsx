@@ -336,8 +336,8 @@ const PDFView = ({ click }) => {
                                 <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION4"] && pdfData["MC-INSTRUCCION4"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>{pdfData && pdfData["MC-DOC1"] && pdfData["MC-DOC2"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["MC-NUM1"] && pdfData["MC-NUM2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-DOC2"] && pdfData["MC-DOC2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-NUM2"] && pdfData["MC-NUM2"]}</Text>
                                 <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION3"] && pdfData["MC-INSTRUCCION5"]}</Text>
                                 <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION4"] && pdfData["MC-INSTRUCCION6"]}</Text>
                             </View>
@@ -360,7 +360,9 @@ const PDFView = ({ click }) => {
                             <Text style={styles.valueTwo}>{pdfData[`MC-EXCLUYE`] && pdfData[`MC-EXCLUYE`]}</Text>
                         </View>
 
-
+<View style={styles.viewKeyValueTwo} >
+                            <Text style={styles.valueTwo}>{pdfData[`MC-EXCLUYE`] && pdfData[`MC-EXCLUYE`]}</Text>
+                        </View>
 
                         <View style={styles.viewKeyValueElaborado} >
                             <Text style={styles.valueElaborador}></Text>
