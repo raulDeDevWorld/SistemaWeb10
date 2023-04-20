@@ -348,18 +348,18 @@ function CotizacionTerrestre() {
                     <div className={style.subtitle}>OBSERVACIONES EN ORIGEN</div>
 
                     <div className={style.inputsAll} >
-                        <textarea type="text" name={"OBSERVACIONES EN ORIGEN"}  onChange={handleEventChange}/>
+                        <textarea type="text" name={"INCLUYE"}  onChange={handleEventChange}/>
                     </div>
                     <br />
                     <div className={style.subtitle}>OBSERVACIONES EN DESTINO</div>
 
                     <div className={style.inputsAll} >
-                        <textarea type="text" name={"OBSERVACIONES EN DESTINO"}  onChange={handleEventChange} />
+                        <textarea type="text" name={"EXCLUYE"}  onChange={handleEventChange} />
                     </div>
                     <br />
 
                     <div className={style.inputsAll} >
-                        <textarea type="text" />
+                        <textarea type="text" name={"COMENTARIO"} />
                     </div>
                 </form>
             </div>
