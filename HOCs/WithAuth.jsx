@@ -17,7 +17,7 @@ export function WithAuth(Component) {
         return (
             <>
                 {user === undefined && <Loader />}
-                {user && <Component {...arguments} />}
+                {user && <Component {...arguments} />} 
             </>
         )
     }
