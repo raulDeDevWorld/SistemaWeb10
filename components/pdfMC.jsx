@@ -361,7 +361,7 @@ const PDFView = ({ click }) => {
                         </View>
 
 <View style={styles.viewKeyValueTwo} >
-                            <Text style={styles.valueTwo}>{pdfData[`MC-EXCLUYE`] && pdfData[`MC-EXCLUYE`]}</Text>
+                            <Text style={styles.valueTwo}>{pdfData[`MC-COMENTARIO`] && pdfData[`MC-EXCLUYE`]}</Text>
                         </View>
 
                         <View style={styles.viewKeyValueElaborado} >
