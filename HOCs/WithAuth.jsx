@@ -19,6 +19,6 @@ export function WithAuth(Component) {
                 {user === undefined && <Loader />}
                 {user && <Component {...arguments} />} 
             </>
-        )
+        ) 
     }
 }
