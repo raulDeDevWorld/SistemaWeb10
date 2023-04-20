@@ -332,8 +332,8 @@ function CotizacionTerrestre() {
                         </div>
 
                         <div>
-                            <input type="text" name={"DOC1"} onChange={handleEventChange} />
-                            <input type="text" name={"NUM1"} onChange={handleEventChange} />
+                            <input type="text" name={"DOC2"} onChange={handleEventChange} />
+                            <input type="text" name={"NUM2"} onChange={handleEventChange} />
                         </div>
                         <div>
                             <input type="text" name={"INSTRUCCION5"} onChange={handleEventChange} />
