@@ -365,11 +365,6 @@ function CotizacionTerrestre() {
 <br />
 
 
-<div className={`${style.containerFirstItems}`}>
-
-                        <span>Elaborado por</span>
-                        <input type="text" name={`ELABORADOR`} onChange={handleEventChange} placeholder="ELABORADO POR" />
-                    </div>
                 </form>
             </div>
             <InvoicePDF click={handlerPDFTester} />
