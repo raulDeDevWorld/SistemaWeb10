@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     },
 title: {
    
-        font-size: 30px;
+        fontSize: 30px;
 
     },
     subtitle: {
