@@ -271,27 +271,27 @@ const PDFView = ({ click }) => {
                         <View style={styles.items}>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>NOMBRE</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["NOMBRE"] && pdfData["NOMBRE"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-NOMBRE"] && pdfData["MC-NOMBRE"]}</Text>
                                 <Text style={styles.valueFour}>LICENCIA</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["LICENCIA"] && pdfData["LICENCIA"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-LICENCIA"] && pdfData["MC-LICENCIA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>CELULAR</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["CELULAR"] && pdfData["CELULAR"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-CELULAR"] && pdfData["MC-CELULAR"]}</Text>
                                 <Text style={styles.valueFour}>PLACA</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["PLACA"] && pdfData["PLACA"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-PLACA"] && pdfData["MC-PLACA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>TIPO DE UNIDAD</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["TIPO DE UNIDAD"] && pdfData["TIPO DE UNIDAD"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-TIPO DE UNIDAD"] && pdfData["MC-TIPO DE UNIDAD"]}</Text>
                                 <Text style={styles.valueFour}>COLOR</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["COLOR"] && pdfData["COLOR"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-COLOR"] && pdfData["MC-COLOR"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>MARCA</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["MARCA"] && pdfData["MARCA"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-MARCA"] && pdfData["MC-MARCA"]}</Text>
                                 <Text style={styles.valueFour}>TRANSITO</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["TRANSITO"] && pdfData["TRANSITO"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-TRANSITO"] && pdfData["MC-TRANSITO"]}</Text>
                             </View>
                         </View>
 
@@ -299,21 +299,21 @@ const PDFView = ({ click }) => {
                         <View style={styles.items}>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>MERCANCIA</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["MERCANCIA"] && pdfData["MERCANCIA"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-MERCANCIA"] && pdfData["MC-MERCANCIA"]}</Text>
                                 <Text style={styles.valueFour}>TIPO DE CARGA</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["TIPO DE CARGA"] && pdfData["TIPO DE CARGA"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-TIPO DE CARGA"] && pdfData["MC-TIPO DE CARGA"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>EMPAQUE</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["EMPAQUE"] && pdfData["EMPAQUE"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-EMPAQUE"] && pdfData["MC-EMPAQUE"]}</Text>
                                 <Text style={styles.valueFour}>SERVICIO</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["SERVICIO"] && pdfData["SERVICIO"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-SERVICIO"] && pdfData["MC-SERVICIO"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.valueFour}>ORIGEN</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["ORIGEN"] && pdfData["ORIGEN"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-ORIGEN"] && pdfData["MC-ORIGEN"]}</Text>
                                 <Text style={styles.valueFour}>DESTINO</Text>
-                                <Text style={styles.valueFour}>{pdfData && pdfData["DESTINO"] && pdfData["DESTINO"]}</Text>
+                                <Text style={styles.valueFour}>{pdfData && pdfData["MC-DESTINO"] && pdfData["MC-DESTINO"]}</Text>
                             </View>
                         </View>
 
@@ -326,20 +326,20 @@ const PDFView = ({ click }) => {
                             <View style={styles.viewKeyValue}>
                                 <Text style={styles.key}>DOCUMENTO</Text>
                                 <Text style={styles.key}>NUMERO</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION1"] && pdfData["INSTRUCCION1"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION2"] && pdfData["INSTRUCCION2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION1"] && pdfData["MC-INSTRUCCION1"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION2"] && pdfData["MC-INSTRUCCION2"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>{pdfData && pdfData["DOC1"] && pdfData["DOC1"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["NUM1"] && pdfData["NUM1"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION3"] && pdfData["INSTRUCCION3"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION4"] && pdfData["INSTRUCCION4"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-DOC1"] && pdfData["MC-DOC1"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-NUM1"] && pdfData["MC-NUM1"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION3"] && pdfData["MC-INSTRUCCION3"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION4"] && pdfData["MC-INSTRUCCION4"]}</Text>
                             </View>
                             <View style={styles.viewKeyValue}>
-                                <Text style={styles.value}>{pdfData && pdfData["DOC1"] && pdfData["DOC2"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["NUM1"] && pdfData["NUM2"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION3"] && pdfData["INSTRUCCION5"]}</Text>
-                                <Text style={styles.value}>{pdfData && pdfData["INSTRUCCION4"] && pdfData["INSTRUCCION6"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-DOC1"] && pdfData["MC-DOC2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-NUM1"] && pdfData["MC-NUM2"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION3"] && pdfData["MC-INSTRUCCION5"]}</Text>
+                                <Text style={styles.value}>{pdfData && pdfData["MC-INSTRUCCION4"] && pdfData["MC-INSTRUCCION6"]}</Text>
                             </View>
 
                         </View>
@@ -349,7 +349,7 @@ const PDFView = ({ click }) => {
                         <Text style={styles.subtitle}>OBSERVACIONES EN ORIGEN</Text>
 
                         <View style={styles.viewKeyValueTwo} >
-                            <Text style={styles.valueTwo}>{pdfData[`CA-INCLUYE`] && pdfData[`CA-INCLUYE`]}</Text>
+                            <Text style={styles.valueTwo}>{pdfData[`MC-INCLUYE`] && pdfData[`MC-INCLUYE`]}</Text>
                         </View>
 
 
@@ -357,7 +357,7 @@ const PDFView = ({ click }) => {
 
 
                         <View style={styles.viewKeyValueTwo} >
-                            <Text style={styles.valueTwo}>{pdfData[`CA-EXCLUYE`] && pdfData[`CA-EXCLUYE`]}</Text>
+                            <Text style={styles.valueTwo}>{pdfData[`MC-EXCLUYE`] && pdfData[`MC-EXCLUYE`]}</Text>
                         </View>
 
 
@@ -365,7 +365,7 @@ const PDFView = ({ click }) => {
                         <View style={styles.viewKeyValueElaborado} >
                             <Text style={styles.valueElaborador}></Text>
                             <Text style={styles.valueElaborador}>ELABORADO POR:</Text>
-                            <Text style={styles.valueElaboradorLine}>{pdfData && pdfData[`CA-ELABORADOR`] && pdfData[`CA-ELABORADOR`]}</Text>
+                            <Text style={styles.valueElaboradorLine}>{pdfData && pdfData[`MC-ELABORADOR`] && pdfData[`MC-ELABORADOR`]}</Text>
                         </View>
 
                         <View style={styles.viewKeyValueTwoYellow} >
