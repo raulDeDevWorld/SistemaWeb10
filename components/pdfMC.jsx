@@ -383,21 +383,7 @@ const PDFView = ({ click }) => {
 
 
 {
-                        tarifa.map((i, index) => {
-                            return (
-                                <div className={`${style.inputs}`} key={index}>
-                                    <input type="text" name={`N${index}`}  placeholder="Nº" />
-                                    <input type="text" name={`ITEM${index}`}  placeholder="ITEM" />
-                                    <input type="text" name={`DESCRIPCION${index}`}  placeholder="DESCRIPCION" />
-                                    <input type="text" name={`MARCA${index}`}  placeholder="MARCA Y/O PRESINTO" />
-                                    <input type="number" name={`CANTIDAD${index}`} onChange={(e) => handlerCalc(e, index)} placeholder="CANTIDAD" />
-                                    <input type="number" name={`PESO${index}`} onChange={(e) => handlerCalc(e, index)} placeholder="PESO (Kg)" />
-                                    <input type="number" name={`VOLUMEN${index}`} onChange={(e) => handlerCalc(e, index)} placeholder="VOLUMEN (M3)" />
-                                    <input type="text" name={`DIRECCION DE ENTREGA${index}`}  placeholder="DIRECCION DE ENTREGA" />
-                                </div>
-                            )
-                        })
-                    }
+           
 
 
 
