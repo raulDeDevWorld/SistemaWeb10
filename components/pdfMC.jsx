@@ -360,14 +360,14 @@ const PDFView = ({ click }) => {
 
 <Text style={styles.subtitle}>DESCRIPCION DE LA CARGA</Text>
                          <View style={styles.viewKeyValueTwo}>
-                                <Text style={styles.valueTarifa}>No</Text>
-                                <Text style={styles.valueTarifa}>ITEM</Text>
-                                <Text style={styles.valueTarifa}>DESCRIPCION</Text>
-                                <Text style={styles.valueTarifa}>MARCA</Text>
-                                <Text style={styles.valueTarifa}>CANTIDAD</Text>
-                                <Text style={styles.valueTarifa}>PESO</Text>
-                                <Text style={styles.valueTarifa}>VOLUMEN</Text>
-                                <Text style={styles.valueTarifa}>DIRECCION DE ENTREGA</Text>
+                                <Text style={styles.key}>No</Text>
+                                <Text style={styles.key}>ITEM</Text>
+                                <Text style={styles.key}>DESCRIPCION</Text>
+                                <Text style={styles.key}>MARCA</Text>
+                                <Text style={styles.key}>CANTIDAD</Text>
+                                <Text style={styles.key}>PESO</Text>
+                                <Text style={styles.key}>VOLUMEN</Text>
+                                <Text style={styles.key}>DIRECCION DE ENTREGA</Text>
                           
                             </View>
 
