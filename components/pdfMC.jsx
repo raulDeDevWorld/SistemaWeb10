@@ -364,7 +364,7 @@ const PDFView = ({ click }) => {
                         pdfData.tarifa.map((i, index) => {
                             return (
 
-                            <View style={styles.viewKeyValueTwo}>
+                            <View style={styles.viewKeyValueTwo} key={index}>
                                 <Text style={styles.value}>{pdfData && pdfData[`MC-N${index}`] && pdfData[`MC-N${index}`]}</Text>
                                 <Text style={styles.value}>{pdfData && pdfData[`MC-ITEM${index}`] && pdfData[`MC-ITEM${index}`]}</Text>
                                 <Text style={styles.value}>{pdfData && pdfData[`MC-DESCRIPCION${index}`] && pdfData[`MC-DESCRIPCION${index}`]}</Text>
